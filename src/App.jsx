@@ -7,6 +7,10 @@ import cardImg1 from "./assets/card-img-1.webp";
 import cardImg2 from "./assets/card-img-2.webp";
 import nandini from "./assets/nandiniMaam.png";
 import sumanth from "./assets/sumanthsir.jpg";
+import plasticCowImg from './assets/plasticcow_img.png'
+import dariyfriendImg from './assets/dairyfriend_img.jpg'
+import mobileApplicationImg from './assets/mobileapplication_img.jpg'
+import workshopImg from './assets/workshop_img.jpg'
 
 import "./App.css";
 import "./resp.css";
@@ -234,25 +238,46 @@ const App = () => {
         <section id="section-2" className="section--3">
           <h1>Innovations</h1>
           <div className="product left">
-            <h1>DAIRY FRIEND</h1>
+            <h1>1. DAIRY FRIEND</h1>
             <img
-              src="https://images.unsplash.com/photo-1561043394-9f7d16d9ae37?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80"
+              src={dariyfriendImg}
               alt=""
             />
             <p>
-            Unlock the power of instant blood sample analysis with DairyFriend. Our app empowers veterinarians to predict disease possibilities swiftly, facilitating early intervention and healthier cattle. Join us in revolutionizing livestock care, one scan at a time.
-            it predicts cattle health, enabling early disease detection. Revolutionize livestock care with precision and speed.
+            Developing a platform that links veterinary professionals with farmers to swiftly identify diseases based on early symptoms, enabling timely delivery of essential medical equipment, is at the core of our product's mission
             </p>
             <a href="#">Learn more</a>
           </div>
           <div className="product right">
-            <h1>PLASTIC COW</h1>
+            <h1>2. PLASTIC COW</h1>
             <img
-              src="https://images.unsplash.com/photo-1551721434-8b94ddff0e6d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1965&q=80"
+              src={plasticCowImg}
               alt=""
             />
             <p>
-            In the realm of responsible farming, PlasticCow emerges as a sentinel for the well-being of your cattle. It harnesses the might of artificial intelligence and machine learning, ever vigilant against the unseen menace of plastic ingestion. With real-time monitoring, PlasticCow promptly detects instances where a cow may attempt to ingest plastic or foreign objects. Timely prevention takes precedence, allowing swift action to protect your livestock's health. This innovative device integrates seamlessly into your cattle management routine, offering valuable insights for your herd's safety.
+            We're working on a product named 'Plastic Cow' designed to prevent cows from ingesting plastic and metal pieces. This innovation aims to mitigate hardware diseases by safeguarding cattle from consuming harmful materials.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div className="product left">
+            <h1>3. WORKSHOPS</h1>
+            <img
+              src={workshopImg}
+              alt=""
+            />
+            <p>
+            Our team actively conducts workshops highlighting the significance of IoT in agriculture. These sessions focus on showcasing various sensors applicable in agricultural practices, emphasizing their practical usage and benefits.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div className="product right">
+            <h1>4. MOBILE APPLICATION</h1>
+            <img
+              src={mobileApplicationImg}
+              alt=""
+            />
+            <p>
+            We are currently developing a mobile application, funded by the National Institute of Veterinary Epidemiology and Disease Informatics (NIVEDI), that aims to aid veterinary professionals in the early-stage diagnosis of Haemoprotozoan diseases, thereby enhancing early detection capabilities within the veterinary field.
             </p>
             <a href="#">Learn more</a>
           </div>
@@ -296,7 +321,7 @@ const App = () => {
               </div>
               <div className="co-founder">
                 <img src={sumanth} alt="" />
-                <h2>Shiva Sumanth Reddy</h2>
+                <h2>Dr. Shiva Sumanth Reddy</h2>
                 <p>Asst. Professor, Dept. of CSE,DSATM</p>
                 <div className="line"></div>
                 <p>

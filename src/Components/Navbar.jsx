@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react'
-import {NavLink} from 'react-router-dom'
 import logo from '../assets/Logo.png'
 import naavic from '../assets/naavic-2.jpg'
 import hamburgerIcon from '../assets/hamburger.png'
@@ -32,16 +31,24 @@ const Navbar = (props) => {
             <div className='hamburger-icon-div'><img src={hamburgerIcon} className='hamburger-icon' alt="" /></div>
             <div className="hamburger-nav">
               <ul>
-                <li><NavLink to="/">HOME</NavLink></li>
+                <li><a to="/">HOME</a></li>
                 {props.internship == "true" ? <></> : <><li><a href="#section-2">INNOVATIONS</a></li>
-                    <li><a href="#section-3">ABOUT</a></li><li><a href='/internship'>INTERNSHIPS</a></li></>}
+                    <li><a href="#section-3">ABOUT</a></li>
+                    {/* <li><a href='/internship'>INTERNSHIPS</a></li> */}
+                    
+                    </>}
               </ul>
             </div>
              <img src={logo} alt="logo" />
             <ul>
                 <li><a href="/">HOME</a></li>
                 {props.internship == "true" ? <></> : <><li><a href="#section-2">INNOVATIONS</a></li>
-                    <li><a href="#section-3">ABOUT</a></li><li><a href='/internship'>INTERNSHIPS</a></li></>}
+                    <li><a href="#section-3">ABOUT</a></li>
+                    
+                    {/* <li><a href='/internship'>INTERNSHIPS</a></li> */}
+                    
+                    
+                    </>}
               </ul>
             <img src={naavic} alt="" />
         </nav>
